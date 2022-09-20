@@ -1,0 +1,121 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+} 
+
+body{
+  position: relative;
+  background-image: url(./Imagenes/Fondo.jpg);
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+}
+
+p{
+  margin: 20px;
+  color: aliceblue;
+}
+
+h1{
+  color: rgb(238, 161, 68);
+}
+
+a{
+  margin: 5%;
+}
+
+.hero{
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+.container{
+  background-image: linear-gradient(135deg, #0a434b,#15436e,#141d36,#203d38,#1e637e);  top: 50px;
+  animation: fanimado 5s infinite;
+  background-size: 500%;
+  width: 350px;
+  border-radius: 4%;
+  align-items: center;
+}
+
+.img-foto{
+  margin: 62px;
+  height: 180px;
+  border-radius: 5%;
+}
+
+.hero-images-container{
+  position: relative;
+}
+
+.hero-img-tech-container{
+  position: absolute;
+  top: 25px;
+  left: 14%;
+  width: 250px;
+  height: 250px;
+  animation: spin 5s linear infinite alternate ;
+}
+
+.hero-img-tech{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero-img-tech:nth-child(1){
+  transform: translate(-50%,-50%);
+  top: 100%;
+  left: 50%;
+}
+
+.hero-img-tech:nth-child(2){
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 0%;
+}
+
+.hero-img-tech:nth-child(3){
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 100%;
+}
+
+.hero-img-tech:nth-child(4){
+  transform: translate(-50%,-50%);
+  top: 0%;
+  left: 50%;
+}
+
+.Redes{
+  margin: 10%;
+}
+
+@keyframes fanimado{
+  0%{
+      background-position:    0% 50%;
+  }
+  50%{
+      background-position:    100% 50%;
+  }
+  100%{
+      background-position:    0% 50%;
+  }
+}
+
+@keyframes spin{
+from {
+  transform: rotate(0deg);
+}
+to{
+  transform: rotate(360deg);
+}
+
+}
